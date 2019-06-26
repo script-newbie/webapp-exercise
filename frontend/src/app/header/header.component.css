@@ -1,0 +1,22 @@
+nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.suggestions {
+  margin-top: -20px;
+  margin-left: 50px;
+  width: 190px;
+  max-width: 190px;
+  overflow: hidden;
+  position: relative;
+  float: right;
+  position: absolute;
+  z-index: 2
+}
+
+.suggestions > li:hover {
+  background-color: skyblue;
+  cursor: pointer;
+}

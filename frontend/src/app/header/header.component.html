@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/users">Users</a>
+        </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input type="text"
+        class="form-control"
+        #searchRef
+        placeholder="Search"
+        aria-label="Search"
+        [formControl]="typeahead"
+      >
+    </form>
+</nav>
+<div class="row">
+    <div class="col-md-9"></div>
+    <div class="col-md-3">
+        <ul class="list-group suggestions" *ngIf="users.length" [hidden]="empty">
+            <li class="list-group-item" *ngFor="let user of users" [routerLink]="['users', user.id]">
+              {{ user.name}}
+            </li>
+        </ul>
+    </div>
+</div>

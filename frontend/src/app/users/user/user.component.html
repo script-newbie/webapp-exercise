@@ -1,0 +1,21 @@
+<div class="container" *ngIf="user">
+  <div class="row">
+    <div class="col-md-4">
+      <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Card image">
+    </div>
+    <div class="col-md-8 jumbotron">
+      <h3>Name: {{ user.name }}</h3>
+      <h3>Address: {{ user.address }}</h3>
+      <h3>Department: {{ user.department }}</h3>
+      <h3>Skill: {{ user.skill }}</h3>
+      <div class="btn-group">
+        <button class="btn btn-warning btn-sm"  [routerLink]="['/users', user.id, 'edit']" routerLinkActive="router-link-active">
+          <i class="fa fa-user-edit"></i>
+        </button>
+        <button class="btn btn-danger btn-sm" (click)="onDeleteUser(user.id)">
+          <i class="fas fa-trash"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+com/springboot/webapp/services/UserService.class
+com/springboot/webapp/WebappApplication$1.class
+com/springboot/webapp/repositories/UserRepository.class
+com/springboot/webapp/model/User.class
+com/springboot/webapp/WebappApplication.class
+com/springboot/webapp/controllers/UserController.class
+com/springboot/webapp/services/UserServiceImpl.class

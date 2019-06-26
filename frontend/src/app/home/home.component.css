@@ -1,0 +1,7 @@
+.btn-group > button {
+  margin-right: 5px;
+}
+
+.item-row:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}

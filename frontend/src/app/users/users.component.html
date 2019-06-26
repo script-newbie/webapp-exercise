@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-3" *ngFor="let user of users">
+    <div class="card" style="width:400" [routerLink]='["/users", user.id]'>
+      <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">{{ user.name }}</h4>
+      </div>
+    </div>
+  </div>
+</div>

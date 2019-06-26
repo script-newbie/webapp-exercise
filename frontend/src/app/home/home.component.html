@@ -1,0 +1,46 @@
+<div class="container">
+  <h3>Create new user</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Card image">
+    </div>
+    <div class="col-md-8">
+      <app-create-user></app-create-user>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row" *ngIf="users.length > 0">
+    <div class="col-md-12">
+      <table class="table table-inverse">
+        <thead class="thead-inverse">
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Department</th>
+            <th>Skill</th>
+            <th>Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users; let i = index" class="item-row">
+              <td>{{ i+1 }}</td>
+              <td>{{ user.name }}</td>
+              <td>{{ user.address }}</td>
+              <td>{{ user.department }}</td>
+              <td>{{ user.skill }}</td>
+              <td>
+                <div class="btn-group">
+                  <button class="btn btn-warning btn-sm" [routerLink]="['/users', user.id, 'edit']" routerLinkActive="router-link-active" >
+                    <i class="fas fa-user-edit"></i>
+                  </button>
+                  <button class="btn btn-danger btn-sm" (click)="onDeleteUser(user.id, i)">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </div> -->
