@@ -1,4 +1,4 @@
-# trustarc-webapp
+# webapp-exercise
 A web application exercise for TrustArc built on Spring Boot & Angular 7
 
 ## Prerequisites
