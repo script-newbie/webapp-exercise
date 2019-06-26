@@ -4,7 +4,7 @@ A web application exercise for TrustArc built on Spring Boot & Angular 7
 ## Prerequisites
 * Docker
 * Docker-compose
-* Angular cli installed
+* Angular cli
 
 ## Running the app locally
 - Clone the project
